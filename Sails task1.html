@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+ background-image:url("bgimg.jpg");
+ background-size:cover;
+}
+
+  
+img {
+  border-radius: 50%;
+}
+  a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+input{
+font-size:30px;
+border-radius:10px;
+background-color:black;
+
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  width:10%;
+
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color:white;
+  font-size:25px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color:rgb(240, 149, 30);
+  color: white;
+  font-size:30px;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+input:focus{
+	outline:none;
+	box-shadow:0px 0px 5px orange;
+	border-color:pink;
+	border-radius:10px;
+	background-color:pink;
+	
+	}
+	input:hover
+	{
+	background-image:linear-gradient(to right top,#051937 ,#004d7a, #008793, #00bf72, #a8eb12);
+	
+	}
+	.di{
+  width: 100px;
+  height: 50px;
+ 
+  position: relative;
+  animation: mymove 10s infinite;
+}
+.p{
+text-align:center;
+font-size:40px;
+color:white;
+font-family:castellar;
+transform: rotateX(360deg);
+  text-shadow: 2px 2px red;
+
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 500px;}
+}
+#ex{
+background-image:url(b.jpg),url(a.jpg);
+background-position:top,bottom;
+background-repeat:no-repeat,repeat;
+}
+#h{
+  color: aqua;
+  font-size: 30px;
+  font-family: monospace;
+  padding-left: 200px;
+  
+  margin-top: 180px;
+
+}
+
+
+</style>
+</head>
+<body >
+<div id="ex">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">Logout</a></li>
+</ul>
+</div>
+<div class="di">
+<p class="p">Sails Software Solutions</p>
+
+</div>
+<p id="h" >Where can we explore more knowledge.....<br/>
+  Get in touch with this to enhance our skills*********
+</p>
+</body>
+</html>
